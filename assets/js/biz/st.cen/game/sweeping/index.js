@@ -1,0 +1,33 @@
+(function($){
+	var msg=$('mine-msg'),level=$('mine-level'),
+	mine=Mine({
+		container:$('mine-game'),
+		cb_ready:function(){
+			msg.innerHTML='准备开始吧……';
+		},
+		cb_start:function(){
+			msg.innerHTML='游戏开始了，小心一点！';
+		},
+		cb_timer:function(t){
+			$('mine-timer').innerHTML=t;
+		},
+		cb_mine_left:function(l){
+			$('mine-left').innerHTML=l;
+		},
+		cb_win:function(){
+			msg.innerHTML='你赢了！';
+		},
+		cb_lose:function(){
+			msg.innerHTML='你输了！';
+		},
+	}),b=[],i,l=['初级','中级','高级'];
+	for(i=0;i<l.length;i++)
+		b.push('<option value='+i+'>'+l[i]+'</option>');
+	level.innerHTML=b.join('');
+	level.onchange=function(e){
+		mine.setLevel(e.target.value);
+	};
+	$('mine-new').onclick=function(e){
+		mine.restart();
+	};
+})(document.getElementById.bind(document));

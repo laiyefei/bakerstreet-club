@@ -1,0 +1,12 @@
+body{background:wheat;}
+#mine-field {text-align:center;}
+#mine-field label {
+	display:inline-block;
+	margin:auto 5px;
+}
+#mine-left,#mine-timer{
+	display:inline-block;
+	width:3em;
+	color:dodgerblue;
+}
+#mine-msg {color:olive;}

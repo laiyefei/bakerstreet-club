@@ -1,0 +1,87 @@
+<head> 
+    <meta charset='UTF-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+<!-- Informal content start -->
+    <meta name='keywords' content='Sherlock Holmes, BakerStreet, Albert Einstein, Lab'>
+    <meta name='keywords' content='夏洛克，福尔摩斯，破案，贝克街，实验，逻辑，事实，科学，科技'>
+    <meta name='description' content='聆听真相的乐章'>
+    <meta name='description' content='∮逻辑的旋律牵动现象，永远演奏者事实♪'>
+    <meta name='description' content='贝克街俱乐部，我到了，你在哪...' >
+    <meta name='description' content='bakerstreet club, I am here, where are you ? ' >
+    <meta name='description' content='真相？实验？逻辑？现象？事实？'>
+    <meta name='language' content='ES'>
+    <meta name='language' content='CH'>
+    <meta name='abstract' content='Truth'>
+    <meta name='author' content='Sherlock Holmes, sherlock@bakerstreet.club'>
+    <meta name='owner' content='Sherlock Holmes'>
+    <meta name='url' content='http://www.bakerstreet.club'>
+    <meta name='identifier-URL' content='http://www.bakerstreet.club'>
+    <meta name='email' content='sherlock@bakerstreet.club'>
+    <meta http-equiv='Expires' content='0'>
+    <meta http-equiv='Pragma' content='no-cache'>
+    <meta http-equiv='Cache-Control' content='no-cache'>
+    <meta name='viewport' content='width=device-width,height=device-height,initial-scale=1,maximum-scale=1,user-scalable=no' />
+    <!-- <meta name='viewport' content='width=device-width, height=device-height, initial-scale=1.0, user-scalable=yes'> -->
+    <meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black'>
+<!-- Informal content end -->
+    <title>☎ BakerStreet ✒Club</title>
+    <link rel='shortcut icon' href='/assets/img/base/bakerstreet-club.ico' type='image/x-icon' />
+    <!-- media='only screen and (max-width:1024px)'  bak for if want can set only css to the screen -->
+    <!-- css need load before js run no empty time wait -->
+    <link type='text/css' rel='stylesheet' href='/assets/css/bakerstreet-club.css' />
+    <!-- something will set for depart query client -->
+    <link type='text/css' rel='stylesheet' href='/assets/css/bakerstreet-club.buff.css' />
+    <script type='text/javascript' src='/assets/js/bakerstreet.club.js'></script>
+    
+    <!-- baidu statics -->
+    <script>
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "https://hm.baidu.com/hm.js?0663bbe97bb78313a5cd84e94f0b3e5a";
+      var s = document.getElementsByTagName("script")[0]; 
+      s.parentNode.insertBefore(hm, s);
+    })();
+
+//function for show info in console
+    (function (){
+        var sherlock = {};
+        sherlock.info = {};
+        sherlock.info.msg = [];
+        sherlock.info.msgShow = []; 
+        sherlock.info.msg.push('%c信　　仰：真相??');
+        sherlock.info.msg.push('%c座 右 铭：∮逻辑的旋律牵动现象，永远演奏者事实♪');
+        sherlock.info.msg.push('%c作　　者：leaf.fly');
+        sherlock.info.msg.push('%c描　　述：qq:852800491;微信:13599545977;');
+        sherlock.info.msg.push('%c邮　　箱：sherlock@bakerstreet.club');
+        sherlock.info.msg.push('%c相关链接：bakerstreet.club,sherlock.help,bakerstreet.top,gogoogle.top');
+        sherlock.info.msg.push('%c版 本 号：v1.0.0.20170708');
+        sherlock.info.msg.push('%c❉ ');
+        sherlock.info.msgShow.push('color:#7905C6');
+        sherlock.info.msgShow.push('color:#089898');
+        sherlock.info.msgShow.push('color:#030F05');
+        sherlock.info.msgShow.push('color:#C4810A');
+        sherlock.info.msgShow.push('color:#406239');
+        sherlock.info.msgShow.push('color:#898321');
+        sherlock.info.msgShow.push('color:#AA2E29');
+        sherlock.info.msgShow.push('font-size:16pt');
+        for(var i = 0; i < (sherlock.info.msg.length || 0); i++){
+            console.log(sherlock.info.msg[i], (sherlock.info.msgShow[i] || 'color:red'));  
+        }
+    })();
+
+    </script> 
+
+     {% for script in page.scripts %}
+     <script type="text/javascript" 
+     src="{{'/assets/js/' | append:script | prepend:site.baseurl | prepend: site.url  }}">
+     </script>
+     {%endfor%}
+     {% for css in page.csses %}
+     <link rel="stylesheet" type="text/css" href="{{'/assets/css/' | append:css | prepend:site.baseurl | prepend: site.url  }}" >
+     {%endfor%}
+
+</head>

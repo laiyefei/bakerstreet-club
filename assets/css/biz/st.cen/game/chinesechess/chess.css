@@ -1,0 +1,26 @@
+@charset "gb2312";
+html,body{
+	height: 100%;
+}
+body{  font-size: 12px; line-height: 150%; }
+.box { margin:0 auto; width:630px; position: relative;height: 100%; left:-100px; }
+.chess_left {float:left; text-align:center }
+.chess_right {  float:left; display:none}
+.move_info {  float:left; margin-top:20px}
+
+.bill_box{ height: 320px; width: 80px; overflow:auto;}
+.bill_box li { cursor:pointer; text-align:left}
+.bill_box li:hover { cursor:pointer; background: #C6A577; }
+.bill_box li:active { cursor:pointer; background: #fff; }
+#billList{ margin-top:20px}
+.bn_box{display:none}
+.bn_box input {
+	margin: 10px;
+}
+#moveInfo{
+	position: absolute;
+	right: -100px;
+	font-size: 16px;
+	font-family: "微软雅黑";
+	color:gold;
+}

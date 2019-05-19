@@ -1,0 +1,84 @@
+---
+layout: index
+---
+<div class='m-bg-body'></div>
+<div class='m-bg-shade'></div>
+<div class='m-bg-xm'>
+
+  <div class='m-bg-egret'></div>
+
+  <div class='m-bg-xm-innerLine'></div>
+</div>
+<div class='m-page'>
+  <!-- set the weather in under floor  -->
+  <div id='dvWeatherInfo' class='m-t-weather'>
+      <div id='dvTemper' class='m-t-weather-Temper' ></div>
+      <div id='dvCurrentCity' class='m-t-weather-city' ></div>
+  </div>
+  <div class='m-title'>
+    <div class='m-t-logo' >
+      <svg xmlns='http://www.w3.org/2000/svg' ><defs>
+        <path id='pLogoFont' d='M15,20 l18,0 l24,30 q50,90 80, -12' />
+        <path id='pSmoke1' d='M122, 49 q8,-8 3,-15 T125,15'  style='fill:none;stroke:black'/>
+        <path id='pSmoke2' d='M124, 49 q8,-8 3,-15 T130,15'  style='fill:none;stroke:black'/>
+        <path id='pSmoke3' d='M126, 49 q8,-8 3,-15 T135,15'  style='fill:none;stroke:black'/></defs>
+        <text   x='0' y='0' style='stroke: #FF9B0A;font-size:16px' >
+          <textpath  id='LDoOpen' openstatus='0' class='m-t-logo-ft'  xlink:href='#pLogoFont' >☎ BakerStreet ✒club
+          <!--<animate attributeName='startOffset' from='0%' to='100%' begin='0s' dur='5s' repeatCount='indefinite' keyTimes='0;1' calcMode='spline' keySplines='0.1 0.2 .22 1'></animate>-->
+          <!-- mvoe font -->
+          </textpath>
+        </text>
+        <text class='m-t-logo-fs' >
+          <textpath xlink:href='#pSmoke1'>............
+            <animate attributeName='startOffset' from='0%' to='100%' begin='0s' dur='2.5s' repeatCount='indefinite' keyTimes='0;1' calcMode='spline' keySplines='0.1 0.2 .42 1'></animate>
+          </textpath>
+        </text>
+        <text class='m-t-logo-fs' >
+          <textpath xlink:href='#pSmoke2'>............
+            <animate attributeName='startOffset' from='0%' to='100%' begin='0s' dur='3.6s' repeatCount='indefinite' keyTimes='0;1' calcMode='spline' keySplines='0.1 0.3 .22 1'></animate>
+          </textpath>
+        </text>
+        <text class='m-t-logo-fs' >
+          <textpath xlink:href='#pSmoke3'>................
+            <animate attributeName='startOffset' from='0%' to='100%' begin='0s' dur='4s' repeatCount='indefinite' keyTimes='0;1' calcMode='spline' keySplines='0.1 0.2 .32 1'></animate>
+          </textpath>
+        </text>
+      </svg>
+    </div>
+    <!-- the div biz -->
+    <div class='m-t-brow'>
+        <div class='m-t-brow-menu'>
+          <span id='spMoveCube' class='m-t-brow-cube'></span>
+          <div id='dvMenuShow' ></div>
+          <div class='m-t-float-clean'></div>
+        </div>
+    </div>
+  </div>
+  <div class='m-body'>
+      <!-- the children menu here  -->
+      <div  class='waveContainer' style='display:none'>
+          <div class='waveMenu-wrap'>
+            <nav class='waveMenu'>
+              <div class='icon-list'  id='dvBodyWaveContent'>
+              </div>
+            </nav>
+            <button class='close-button' id='close-button'>Close Menu</button>
+            <div class='morph-shape' id='morph-shape' data-morph-open='M0,100h1000V0c0,0-136.938,0-224,0C583,0,610.924,0,498,0C387,0,395,0,249,0C118,0,0,0,0,0V100z'>
+              <svg xmlns='http://www.w3.org/2000/svg' width='100%' height='100%' viewBox='0 0 1000 100' preserveAspectRatio='none'>
+                <path d='M0,100h1000l0,0c0,0-136.938,0-224,0c-193,0-170.235-1.256-278-35C399,34,395,0,249,0C118,0,0,100,0,100L0,100z'/>
+              </svg>
+            </div>
+          </div>
+
+        <div class='waveContent-wrap'>
+          <div class='waveContent'>
+          </div>
+        </div><!-- /waveContent-wrap -->
+      </div>
+      </div>
+  </div>
+
+  <!-- sherlock here this is the great biz in this website -->
+  <div id='dvSherlock' class='m-sherlock'></div>
+
+</div>

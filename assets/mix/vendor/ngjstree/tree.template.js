@@ -1,0 +1,16 @@
+document.write('<div id="dvTreeContainer" style="width:100%" class="container" ng-controller="treeCtrl as vm">'
++ '    <div class="row" cg-busy="vm.promise" style="height:100%;">'
++ '        <toaster-container></toaster-container>'
++ '        <div class="col-xs-6" style="width:100%;padding:0;height:100%;height:100%;">'
++ '            <div class="panel panel-default" style="height:100%;margin-bottom:0">'
++ '                <div class="panel-heading" style="position:relative"><i class="glyphicon glyphicon-tree-conifer"></i> 档 案 室 '
++ '<button id="btnSearchArchive" ></button><input id="txtSearchArchive" type="text"  /></div>'
++ '                <div class="panel-body" style="padding:0;overflow-x:hidden;overflow-y:auto">'
++ '<div js-tree="vm.treeConfig" should-apply="vm.applyModelChanges()" ng-model="vm.treeData" '
++ ' tree="vm.treeInstance" ng-click="vm.onTreeItemClick(\'itemClicked\', $event)" ></div>'
+//tree-events="ready:vm.readyCB;create_node:vm.createCB"
++ '                </div>'
++ '            </div>'
++ '        </div>'
++ '   </div>'
+ + '</div>');

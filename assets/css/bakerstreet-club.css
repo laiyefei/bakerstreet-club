@@ -1,0 +1,565 @@
+/*
+ * font declare
+*/
+@@font-face {
+  font-family : mathilde;
+  src : url('resos/css-ex/mathilde.otf')
+}
+
+/*
+ * need init some dom style
+*/
+li {
+  list-style: none;
+}
+
+*{
+    padding:0;
+    margin:0;
+    /*-moz-user-select:none;
+    -webkit-user-select:none;
+    -ms-user-select:none;
+    -khtml-user-select:none;
+    user-select:none;*/
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+         box-sizing: border-box;
+  	/*overflow: hidden;*/
+  	 /*pointer-events: none;*/
+     -webkit-user-select:none;
+     -moz-user-select:none;
+     -o-user-select:none;
+     -ms-user-select:none;
+     -user-select:none;
+}
+/* mouse style set
+*{padding:0;margin:0;cursor:url(../img/leaf.ico),auto;-webkit-user-select:none;-moz-user-select:none;-o-user-select:none;-ms-user-select:none;-user-select:none;}
+*:hover{cursor:url(../img/leaf.ico),auto;}
+*:link{cursor:url(../img/leaf.ico),auto;}
+*:active{cursor:url(../img/oleaf.ico),auto;}
+*:visited{cursor:url(../img/leaf.ico),auto;}*/
+
+
+/* no set personal att to default tag */
+:root html,body{filter:none;}
+html, body{
+    width:100%;
+    height:100%;
+    /*min-width: 640px;*/
+    min-width: 984px;
+    z-index: -1000;
+    position: fixed;
+    margin:0;
+    padding:0;
+}
+.m-bg-body{
+  position: fixed;
+  width:100%;
+  height:100%;
+  overflow:hidden;
+  z-index: -999;
+  background: #000AFF;
+  filter: alpha(opacity=100,finishopacity=0,style=1);
+  background: -moz-linear-gradient(top,  #000AFF 0%, #ffffff 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#000AFF), color-stop(100%,#ffffff));
+  background: -webkit-linear-gradient(top,  #000AFF 0%,#ffffff 100%);
+  background: -o-linear-gradient(top,  #000AFF 0%,#ffffff 100%);
+  background: -ms-linear-gradient(top,  #000AFF 0%,#ffffff 100%);
+  background: linear-gradient(top,  #000AFF 0%,#ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000AFF', endColorstr='#ffffff',GradientType=0 );
+}
+.m-bg-shade{
+    position: fixed;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+    z-index: -998;
+    background:white;
+    opacity:0.76;
+    filter:alpha(opacity=76);
+}
+.m-bg-shade-night{
+  background-color: black;
+  opacity: .83;
+  filter: alpha(opacity=83);
+}
+.m-bg-xm{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: -997;
+  background-image: url(../img/biz/background/xm.png);
+  background-repeat: no-repeat;
+  background-size: 18% 18%;
+  background-position: 30% bottom;
+  opacity: 0.48;
+  filter: alpha(opacity=48);
+}
+.m-bg-egret{
+  position: fixed;
+  z-index: -996;
+  top:30%;
+  right:0;
+  width:50%;
+  height:50%;
+  background-image: url(../img/biz/background/egret.empty.png);
+  background-repeat: no-repeat;
+  background-size: 36%;
+  opacity: 0.37;
+  filter:alpha(opacity=37);
+}
+.m-bg-xm-innerLine{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: -997;
+  background-image: url(../img/biz/background/xm.line.water.png);
+  background-repeat: repeat-x;
+  background-size: 18% 18%;
+  background-position: 30% bottom;
+}
+.m-bg-way{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  left:0;
+  z-index: -997;
+  background-image: url(../img/biz/background/way.png);
+  background-repeat: no-repeat;
+  background-size: 38% 38%;
+  background-position: right bottom;
+  opacity: 0.48;
+  filter: alpha(opacity=48);
+}
+.m-bg-way-light{
+  position: absolute;
+  width: 150px;
+  height: 325px;
+  bottom:0;
+  right:0;
+  background-image: url(../img/biz/background/light.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+.m-page{
+  width:100%;
+  height:100%;
+  position: relative;
+  z-index: 0;
+}
+.m-title {
+  /*border:2px solid transparent;
+  -moz-box-shadow:0 0 2px #FFFFFF, inset 0 -10px 10px -10px #FFFFFF;
+  -webkit-box-shadow:0 0 2px #FFFFFF, inset 0 -10px 10px -10px #FFFFFF;
+  box-shadow:0 0 2px #FFFFFF, inset 0 -10px 10px -10px #FFFFFF;
+  position: relative;*/
+  height:100px;
+  box-shadow:0 0 10px #B2A5A5, inset 1px -1px 10px #F6F5F9;
+  position: relative;
+  /*border-bottom:1px #B2A5A5 solid;*/
+}
+.m-body{
+    height: calc(100% - 100px);
+    position: relative;
+}
+.m-body-dv1{
+    display: inline-block;
+    width: 221px;
+    height: 100%;
+    left: 0;
+}
+.m-body-dv2{
+    display: inline-block;
+    width:680px;
+    height: 100%;
+    position: absolute;
+}
+.m-body-dv2-mainShow{
+  opacity:.88;
+  filter:alpha(opacity=88);
+  border-radius:5px;
+  box-shadow:0 0 1px black;
+  height: 320px;
+  margin-top:40px;
+  background:url(../img/biz/mainshow/1.jpg)  no-repeat;background-size:100% 100%;
+  position: relative;
+}
+#dvMainShow{
+  width:100%;
+  height:100%;
+}
+.m-body-mainShow-rl{
+  position:absolute;
+  width:30px;
+  height:30px;
+  background:black;
+  opacity:.6;
+  filter:alpha(opacity=60);
+  color:#B2B7AF;
+  font-size:17px;
+  line-height:30px;
+  border-radius:100%;
+  text-indent: 11px;
+  font-weight: bold;
+
+}
+.m-body-mainShow-rl:hover{
+  text-shadow:0 0 10px white;
+  opacity:0.8;
+  filter:alpha(opacity=80);
+  cursor: pointer;
+  color:pink;
+}
+.m-body-mainShow-rl:active{
+  color:green;
+}
+#dvMainShow-left{
+  top:124px;
+  left:41px;
+}
+#dvMainShow-right{
+  top:124px;
+  left:609px;
+}
+#dvMainShow-bottom{
+    opacity:.74;
+    filter:alpha(opacity=74);
+    width:100%;
+    left:0;
+    top:256px;
+    position:absolute;
+    height:64px;
+    background:black;
+}
+#dvMainShow-bottom-inc{
+    text-align:left;
+    color:white;
+    font-weight:bold;
+    line-height:160%;
+    text-indent:4%;
+    text-shadow:0 0 5px white;
+    height:30px;
+}
+#dvMainShow-bottom-btns{
+    height:34px;
+}
+.m-body-mainshow-bottom-btnBehide{
+    width:13px;
+    height:13px;
+    background:white;
+    margin-top:4px;
+    float:right;
+    margin-right:6%;
+    cursor:pointer;
+    border-radius:100%;
+}
+.m-body-mainshow-bottom-btnBehide:hover{
+  box-shadow:0 0 7px white;
+}
+.m-body-mainshow-bottom-btnAfter{
+  background:#6252C6
+}
+.m-body-mainshow-bottom-font{
+  height:50%;
+  width:100%;
+  position:absolute;
+  top:0%;
+  text-align:left;
+  color:white;
+  font-weight:bold;
+  line-height:200%;
+  text-indent:4%;
+  text-shadow:0 0 5px white;
+}
+.m-body-dv3{
+    display: inline-block;
+    width: calc(100% - 901px);
+    height: 100%;
+    position: absolute;
+    right: 0;
+}
+
+.m-body-dv-MContent{
+    display: inline-block;
+    width: calc(100% - 221px);
+    height: 100%;
+    position: absolute;
+    right: 0; 
+}
+.m-body-dv-MContentMsg{
+    position: absolute;
+    top:0;
+    left:0;
+    width:calc(100% - 360px);
+    height:100%;
+}
+.m-body-dv-MContentMsg-title{
+    position: absolute;
+    top:0;
+    left:0;
+    height:70px;
+    width:100%;
+}
+.m-body-dv-MContentMsg-body{
+    position: absolute;
+    top:70px;
+    left:0;
+    width:100%;
+    height: calc(100% - 70px);
+}
+
+.m-foot{
+    height:50px;
+    text-align: center;
+    line-height: 200%;
+}
+
+.m-t-logo {
+  position: relative;
+  width:221px;
+  height:100%;
+  display: inline-block;
+}
+.m-t-logo svg{
+    width: 100%;
+    margin:0;
+    padding:0;
+    transform: scale(.838);
+    height: 100%;
+}
+.m-t-logo-ft{
+  /*stroke:#FF0005;*/
+  stroke:black;
+  cursor: pointer;
+  text-shadow: 0 0 10px #F78621;
+	animation: m-t-logo-fire 2s linear infinite;
+	-moz-animation: m-t-logo-fire 2s linear infinite;
+	-webkit-animation: m-t-logo-fire 2s linear infinite;
+	-o-animation: m-t-logo-fire 2s linear infinite;
+}
+
+
+/*the weather css and set in class than easy change style in other where*/
+.m-t-weather{
+  width:180px;
+  float: right;
+  height:180px;
+  background-color:transparent;
+  opacity:.6;
+  filter:alpha(opacity=60);
+  margin-top:8px;
+  position: inherit;
+  z-index: 999;
+  /*padding:10px 10px 0 0;*/
+  /*init not show*/
+}
+.m-t-weather .m-t-weather-city{
+    float:right;
+    margin-top:23px;
+    margin-right:10px;
+    width:100px;
+    height:20px;
+    font-weight:bold;
+    font-size:23px;
+    color:green;
+    letter-spacing:5px;
+    text-shadow:0 0 26px black;
+}
+.m-t-weather .m-t-weather-Temper{
+    float:right;
+    margin-top:11px;
+    margin-right:25px;
+    width:35px;
+    height:35px;
+    font-size:20px;
+    font-weight:bold;
+    text-shadow:0 0 10px black;
+}
+
+/*shin weather*/
+#dvWeatherInfo{
+ animation: shinObj 2s linear infinite;
+ -moz-animation: shinObj 2s linear infinite;	/* Firefox */
+ -webkit-animation: shinObj 2s linear infinite;	/* Safari 和 Chrome */
+ -o-animation: shinObj 2s linear infinite;	/* Opera */
+}
+
+@keyframes shinObj{
+ 0%{opacity: 0.7;filter: alpha(opacity=70);}
+ 30%{opacity: 0.8;filter: alpha(opacity=80);}
+ 50%{opacity: 1;filter: alpha(opacity=100);}
+ 60%{opacity: 0.9;filter: alpha(opacity=90);}
+ 80%{opacity: 0.76;filter: alpha(opacity=76);}
+ 100%{opacity: 0.7;filter: alpha(opacity=70);}
+}
+@-moz-keyframes shinObj{
+ 0%{opacity: 0.7;filter: alpha(opacity=70);}
+ 30%{opacity: 0.8;filter: alpha(opacity=80);}
+ 50%{opacity: 1;filter: alpha(opacity=100);}
+ 60%{opacity: 0.9;filter: alpha(opacity=90);}
+ 80%{opacity: 0.76;filter: alpha(opacity=76);}
+ 100%{opacity: 0.7;filter: alpha(opacity=70);}
+}
+@-webkit-keyframes shinObj{
+ 0%{opacity: 0.7;filter: alpha(opacity=70);}
+ 30%{opacity: 0.8;filter: alpha(opacity=80);}
+ 50%{opacity: 1;filter: alpha(opacity=100);}
+ 60%{opacity: 0.9;filter: alpha(opacity=90);}
+ 80%{opacity: 0.76;filter: alpha(opacity=76);}
+ 100%{opacity: 0.7;filter: alpha(opacity=70);}
+}
+@-o-keyframes shinObj{
+ 0%{opacity: 0.7;filter: alpha(opacity=70);}
+ 30%{opacity: 0.8;filter: alpha(opacity=80);}
+ 50%{opacity: 1;filter: alpha(opacity=100);}
+ 60%{opacity: 0.9;filter: alpha(opacity=90);}
+ 80%{opacity: 0.76;filter: alpha(opacity=76);}
+ 100%{opacity: 0.7;filter: alpha(opacity=70);}
+}
+
+/*>21℃
+*/
+.m-t-weather-Temper-hot{
+    color : #F06C24;
+  	/*animation: m-t-weather-Temper-hotAnimate 2s linear infinite;
+  	-moz-animation: m-t-weather-Temper-hotAnimate 2s linear infinite;
+  	-webkit-animation: m-t-weather-Temper-hotAnimate 2s linear infinite;
+  	-o-animation: m-t-weather-Temper-hotAnimate 2s linear infinite;*/
+}
+/*<11℃
+*/
+.m-t-weather-Temper-cold{
+    color : #0D03F0;
+  	/*animation: m-t-weather-Temper-coldAnimate 2s linear infinite;
+  	-moz-animation: m-t-weather-Temper-coldAnimate 2s linear infinite;
+  	-webkit-animation: m-t-weather-Temper-coldAnimate 2s linear infinite;
+  	-o-animation: m-t-weather-Temper-coldAnimate 2s linear infinite;*/
+}
+/*10℃ < 22℃
+*/
+.m-t-weather-Temper-cool{
+    color : #9c1ba2;
+    /*text-shadow: 0 0 12px #C6FF76;*/
+}
+/*the animate for weather*/
+@keyframes m-t-weather-Temper-hotAnimate{
+  	0%{text-shadow: 0 0 12px #FF2C00}
+  	20%{text-shadow: 0 0 13px #FF5200}
+  	50%{text-shadow: 0 0 14px #FF9500}
+  	60%{text-shadow: 0 0 15px #FFC100}
+  	70%{text-shadow: 0 0 14px #FFC900}
+  	900%{text-shadow: 0 0 13px #FFAF00}
+  	100%{text-shadow: 0 0 12px #FF4B00}
+}
+
+@-moz-keyframes m-t-weather-Temper-hotAnimate{
+  	0%{text-shadow: 0 0 12px #FF2C00}
+  	20%{text-shadow: 0 0 13px #FF5200}
+  	50%{text-shadow: 0 0 14px #FF9500}
+  	60%{text-shadow: 0 0 15px #FFC100}
+  	70%{text-shadow: 0 0 14px #FFC900}
+  	900%{text-shadow: 0 0 13px #FFAF00}
+  	100%{text-shadow: 0 0 12px #FF4B00}
+}
+@-webkit-keyframes m-t-weather-Temper-hotAnimate{
+  	0%{text-shadow: 0 0 12px #FF2C00}
+  	20%{text-shadow: 0 0 13px #FF5200}
+  	50%{text-shadow: 0 0 14px #FF9500}
+  	60%{text-shadow: 0 0 15px #FFC100}
+  	70%{text-shadow: 0 0 14px #FFC900}
+  	900%{text-shadow: 0 0 13px #FFAF00}
+  	100%{text-shadow: 0 0 12px #FF4B00}
+}
+@-o-keyframes m-t-weather-Temper-hotAnimate{
+  	0%{text-shadow: 0 0 12px #FF2C00}
+  	20%{text-shadow: 0 0 13px #FF5200}
+  	50%{text-shadow: 0 0 14px #FF9500}
+  	60%{text-shadow: 0 0 15px #FFC100}
+  	70%{text-shadow: 0 0 14px #FFC900}
+  	900%{text-shadow: 0 0 13px #FFAF00}
+  	100%{text-shadow: 0 0 12px #FF4B00}
+}
+/*cold here*/
+@keyframes m-t-weather-Temper-coldAnimate{
+  	0%{text-shadow: 0 0 10px #031FF0}
+  	20%{text-shadow: 0 0 14px #0358F0}
+  	50%{text-shadow: 0 0 19px #1A8BFF}
+  	60%{text-shadow: 0 0 23px #1AA0FF}
+  	70%{text-shadow: 0 0 18px #1ACEFF}
+  	900%{text-shadow: 0 0 14px #1AEDFF}
+  	100%{text-shadow: 0 0 10px #717CDB}
+}
+
+@-moz-keyframes m-t-weather-Temper-coldAnimate{
+  	0%{text-shadow: 0 0 10px #031FF0}
+  	20%{text-shadow: 0 0 14px #0358F0}
+  	50%{text-shadow: 0 0 19px #1A8BFF}
+  	60%{text-shadow: 0 0 23px #1AA0FF}
+  	70%{text-shadow: 0 0 18px #1ACEFF}
+  	900%{text-shadow: 0 0 14px #1AEDFF}
+  	100%{text-shadow: 0 0 10px #717CDB}
+}
+@-webkit-keyframes m-t-weather-Temper-coldAnimate{
+  	0%{text-shadow: 0 0 10px #031FF0}
+  	20%{text-shadow: 0 0 14px #0358F0}
+  	50%{text-shadow: 0 0 19px #1A8BFF}
+  	60%{text-shadow: 0 0 23px #1AA0FF}
+  	70%{text-shadow: 0 0 18px #1ACEFF}
+  	900%{text-shadow: 0 0 14px #1AEDFF}
+  	100%{text-shadow: 0 0 10px #717CDB}
+}
+@-o-keyframes m-t-weather-Temper-coldAnimate{
+  	0%{text-shadow: 0 0 10px #031FF0}
+  	20%{text-shadow: 0 0 14px #0358F0}
+  	50%{text-shadow: 0 0 19px #1A8BFF}
+  	60%{text-shadow: 0 0 23px #1AA0FF}
+  	70%{text-shadow: 0 0 18px #1ACEFF}
+  	900%{text-shadow: 0 0 14px #1AEDFF}
+  	100%{text-shadow: 0 0 10px #717CDB}
+}
+
+
+/*main for the logo infi bak:stroke:#FF0005;stroke:#FF0062 stroke:#FF0005;*/
+@keyframes m-t-logo-fire{
+  	0%{text-shadow: 0 0 1px #FF0005;}
+  	30%{text-shadow: 0 0 16px #FF002C;}
+  	50%{text-shadow: 0 0 18px #FF0040;}
+  	60%{text-shadow: -10px -10px 60px #FFCED1;}
+  	80%{text-shadow: 0 0 16px #FF1F00;}
+  	100%{text-shadow: 0 0 1px #FF0000;}
+}
+
+@-moz-keyframes m-t-logo-fire{
+  	0%{text-shadow: 0 0 1px #FF0005;}
+  	30%{text-shadow: 0 0 16px #FF002C;}
+  	50%{text-shadow: 0 0 18px #FF0040;}
+  	60%{text-shadow: -10px -10px 60px #FFCED1;}
+  	80%{text-shadow: 0 0 16px #FF1F00;}
+  	100%{text-shadow: 0 0 1px #FF0000;}
+}
+@-webkit-keyframes m-t-logo-fire{
+  	0%{text-shadow: 0 0 1px #FF0005;}
+  	30%{text-shadow: 0 0 16px #FF002C;}
+  	50%{text-shadow: 0 0 18px #FF0040;}
+  	60%{text-shadow: -10px -10px 60px #FFCED1;}
+  	80%{text-shadow: 0 0 16px #FF1F00;}
+  	100%{text-shadow: 0 0 1px #FF0000;}
+}
+@-o-keyframes m-t-logo-fire{
+  	0%{text-shadow: 0 0 1px #FF0005;}
+  	30%{text-shadow: 0 0 16px #FF002C;}
+  	50%{text-shadow: 0 0 18px #FF0040;}
+  	60%{text-shadow: -10px -10px 60px #FFCED1;}
+  	80%{text-shadow: 0 0 16px #FF1F00;}
+  	100%{text-shadow: 0 0 1px #FF0000;}
+}
+.m-t-logo-fs{
+  stroke: #ffffff;
+  font-size:1px;
+  text-shadow: 0 0 5px white;
+}

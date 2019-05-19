@@ -1,0 +1,68 @@
+
+/*
+ * 背景层 -- z-index:0
+ * 人物 -- z-index:1
+ * npc -- z-index:2
+ * 障碍层 -- z-index:3
+ * 移动路径 -- z-index:4
+ * 遮罩层层 -- z-index:5
+ */
+* { font-size: 9pt; margin: 0;padding: 0;}
+body { cursor:url('../red.cur'),auto; }
+.none { display: none; }
+.z0 { z-index: 0; }
+.z1 { z-index: 1; }
+.z2 { z-index: 2; }
+.z3 { z-index: 3; }
+.z4 { z-index: 4; }
+.z5 { z-index: 5; }
+
+.o2 { opacity: .2; }
+.o3 { opacity: .3; }
+.o4 { opacity: .4; }
+.o6 { opacity: .6; }
+
+/* 背景层 */
+#underlay {position: absolute;background: url(../images/bg/bg.png) no-repeat;width: 1340px;height: 670px;left: 0;top: 0;}
+.d3 {
+    position: absolute;
+    background: url(http://www.jcore.cn/resources/images/2014/10/24/javascript-game-map45-0.png) no-repeat -192px -64px;
+    width: 64px;height: 32px;line-height: 32px;text-align: center;z-index: 0;}
+.d1 {
+    position: absolute;
+    background: url(http://www.jcore.cn/resources/images/2014/10/24/javascript-game-map45-0.png) no-repeat -192px -128px;
+    width: 64px;height: 32px;line-height: 32px;text-align: center;z-index: 0;}
+.d2 {position: absolute;background-image: url(../images/tile.gif);width: 64px;height: 32px;line-height: 32px;text-align: center;z-index: 0;}
+
+/* 障碍层 */
+.obstacle1 { position: absolute;background-image: url(../images/jz/3.png);width: 280px;height: 110px;left: 550px;top: 190px; }
+.obstacle2 { position: absolute;background-image: url(../images/jz/4.png);width: 210px;height: 150px;left: 460px;top: 300px; }
+.obstacle3 { position: absolute;background-image: url(../images/jz/5.png);width: 121px;height: 60px;left: 1010px;top: 290px; }
+.obstacle4 { position: absolute;background-image: url(../images/jz/6.png);width: 120px;height: 120px;left: 775px;top: 365px; }
+
+/* 主角人物 */
+.role { width:200px;height:200px;position:absolute; }
+/* 媚灵狐 */
+.mlh_z0{ background:url(../images/rw/mlh.png); }
+.mlh_z1{ background:url(../images/rw/mlh-D1.png); }
+.mlh_z2{ background:url(../images/rw/mlh-D2.png); }
+
+/* 剑飞侠 */
+.jfx_z0{ background:url(../images/rw/jfx.png); }
+.jfx_z1{ background:url(../images/rw/jfx-D1.png); }
+.jfx_z2{ background:url(../images/rw/jfx-D2.png); }
+
+/* 武尊神 */
+.wzs_z0{ background:url(../images/rw/wzs.png); }
+.wzs_z1{ background:url(../images/rw/wzs-D1.png); }
+.wzs_z2{ background:url(../images/rw/wzs-D2.png); }
+
+/* 混天魔 */
+.htm_z0{ background:url(../images/rw/htm.png); }
+.htm_z1{ background:url(../images/rw/htm-D1.png); }
+.htm_z2{ background:url(../images/rw/htm-D2.png); }
+
+/* 神天兵 */
+.stb_z0{ background:url(../images/rw/stb.png); }
+.stb_z1{ background:url(../images/rw/stb-D1.png); }
+.stb_z2{ background:url(../images/rw/stb-D2.png); }

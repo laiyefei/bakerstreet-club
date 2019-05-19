@@ -1,0 +1,105 @@
+input {
+	outline: none;
+}
+input[type=search] {
+	-webkit-appearance: textfield;
+	-webkit-box-sizing: content-box;
+	font-family: inherit;
+	font-size: 100%;
+}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button {
+	display: none; /* remove the search and cancel icon */
+}
+
+/* search input field */
+input[type=search] {
+	border: solid 1px #ccc;
+	padding: 9px 10px 9px 32px;
+
+  width: 130px;
+
+	-webkit-border-radius: .5em;
+	-moz-border-radius: .5em;
+	border-radius: .5em;
+
+	-webkit-transition: all .5s;
+	-moz-transition: all .5s;
+	transition: all .5s;
+}
+input[type=search]:focus {
+	background-color: #fff;
+	border-color: #6dcff6;
+
+	-webkit-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	-moz-box-shadow: 0 0 5px rgba(109,207,246,.5);
+	box-shadow: 0 0 5px rgba(109,207,246,.5);
+}
+
+/* placeholder */
+input:-moz-placeholder {
+	color: #999;
+}
+input::-webkit-input-placeholder {
+	color: #999;
+}
+
+.m-body-dv1{
+  text-indent: 20px;
+}
+#txtSearch{
+  margin-top: 20px;
+  background: #ededed url(../../../img/biz/jsx/search/search-icon.png) no-repeat 9px center;
+  opacity: 0.8;
+  filter:alpha(opacity=80);
+  /*font-weight: bold;*/
+  letter-spacing: 2px;
+  color:#1A3621;
+  text-shadow: 0 0 1px #ccc;
+	z-index: 99;
+}
+#txtSearch:focus{
+  opacity: 1;
+  filter:alpha(opacity=100);
+}
+#btnSearch{
+  border:none;
+  outline: none;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  margin-top: 24px;
+  margin-left: 5px;
+  background:transparent;
+  cursor:pointer;
+	z-index: 100;
+}
+#dvSearch{
+    height:430px;
+    overflow: hidden;
+
+		position: relative;
+}
+#dvSearchInfo{
+    background-color:white;
+		background-color:rgba(255, 255, 255, 0.53);
+		-webkit-border-radius: .25em;
+		-moz-border-radius: .25em;
+		border-radius: .25em;
+		width:200px;
+		padding:10px;
+		margin:10px auto;
+    overflow: hidden;
+}
+#dvSearchInfo div{
+		padding:5px;
+		border-bottom: 1px #ccc dashed;
+		cursor: pointer;
+}
+#dvSearchInfo div:hover{
+		background-color: ##a4dbd7;
+		background-color: rgba(168, 227, 226, 0.75);
+}
+#dvGuessSearch{
+    overflow: hidden;
+}

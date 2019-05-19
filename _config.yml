@@ -1,0 +1,43 @@
+permalink: /:year-:month-:day/:title/
+
+highlighter: rouge
+markdown: kramdown
+kramdown:
+  input:  GFM
+  syntax_highlighter: rouge
+
+baseurl: ""
+
+plugins: [jekyll-paginate]
+paginate: 10
+paginate_path: ":num"
+
+
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      styles : [highlight.css,post.css]
+      scripts : [post.js]
+
+
+
+title: "➳_︵叶︵︵漂︵︵︵流︵︵︵︵※※※※※"
+email: "sherlock@bakerstreet.club"
+description: "逻 辑 的 旋 律 牵 动 现 象 ， 永 远 演 奏 者 事 实 。"
+github_username:  "laiyefei"
+swiftype_searchId: "ncwR9a8S9CTx2q9SgsJm"
+
+
+
+name: "➳叶漂流"
+url: "http://laiyefei.com"
+imgrepo: "/assets/img/biz/body"
+
+
+#url: "http://127.0.0.1:4000"
+#imgrepo: "http://127.0.0.1:4000/static/img"

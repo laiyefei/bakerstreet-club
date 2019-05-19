@@ -1,0 +1,61 @@
+html, body{
+  width:100%;
+  height:100%;
+}
+.csPage{
+  width:100%;
+  height:100%;
+  position: relative;
+}
+#dvTreeContainer{
+  height: 100%;
+}
+.csPageLeft{
+  width: 20%;
+  height: 100%;
+  left:0;
+  position: absolute;
+  overflow: hidden;
+}
+.csPageRight{
+  width: 80%;
+  height: 100%;
+  right:0;
+  position: absolute;
+  overflow: hidden;
+}
+.csPageRight iframe{
+  border:none;
+  width:100%;
+  height:100%;
+}
+#btnSearchArchive{
+  position: absolute;
+  margin-left: 10px;
+  height: 26px;
+  width: 21px;
+  opacity: 0;
+  filter:opacity(alpha=0);
+}
+#txtSearchArchive{
+  width:120px;
+  padding:2px;
+  padding-left: 25px;
+  margin-left: 10px;
+  background-image: url(../../../../img/biz/jsx/search/search-icon.png);
+  background-position:3px 50%;
+  background-repeat: no-repeat;
+  border: none;
+  color: green;
+  box-shadow: 0 0 1px black;
+}
+.panel-body{
+  height: calc(100% - 46px)
+}
+/*::-webkit-scrollbar-track-piece{width:10px;background-color:#ccc;  }
+
+::-webkit-scrollbar{width:8px;height:6px;}
+
+::-webkit-scrollbar-thumb{height:50px;background:rgba(249, 218, 218, 0.38);cursor:pointer;}
+
+::-webkit-scrollbar-thumb:hover{background:#ccc; cursor:pointer}*/
